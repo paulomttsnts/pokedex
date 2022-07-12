@@ -1,0 +1,209 @@
+/* Importação da fonte. */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+:root {
+    font-size: 62.5%;
+}
+
+* {
+    margin: 0rem;
+    padding: 0rem;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Estilização da página. */
+
+body {
+    background: #171717;
+}
+
+body::-webkit-scrollbar {
+    width: 12px;               
+  }
+  
+body::-webkit-scrollbar-track {
+    background: #333333;       
+}
+  
+body::-webkit-scrollbar-thumb {
+    background-color: #580AFF;
+    border-radius: 20px;
+    border: .25rem solid #333333; 
+}
+
+#header {
+    width: 100%;
+    height: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #212121;
+}
+
+.logo {
+    font-size: 3rem;
+    font-weight: 700;
+    text-decoration: none;
+    color: #580AFF;
+}
+
+.pokemons {
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    scroll-padding-left: 2rem;
+    display: grid;
+    width: 100%;
+    grid-auto-flow: column;
+    gap: 2.5rem;
+    padding: 2rem;
+    background: #212121;
+}
+
+.pokemons::-webkit-scrollbar {
+    width: 12px;               
+  }
+  
+.pokemons::-webkit-scrollbar-track {
+    background: #333333;       
+}
+  
+.pokemons::-webkit-scrollbar-thumb {
+    background-color: #580AFF;
+    border-radius: 20px;
+    border: .5rem solid #333333; 
+}
+
+.pokemon-card {
+    scroll-snap-align: start;
+    width: 10rem;
+    height: 10rem;
+    border-radius: 2rem;
+    background: #580AFF;
+    cursor: pointer;
+}
+
+.pokemon-card-image {
+    width: 90%;
+    height: 90%;
+    margin: 5%;
+}
+
+#pokemon {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1.5rem;
+}
+
+.pokemon-infos {
+    width: 100%;
+    height: 30rem;
+}
+
+.pokemon-infos-id {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #FFFFFF;
+}
+
+.pokemon-infos-name {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #FFFFFF;
+}
+
+.pokemon-infos-name::first-letter {
+    text-transform: uppercase;
+}
+
+.pokemon-infos-types {
+    display: flex;
+    gap: 2.5rem;
+}
+
+.pokemon-infos-type {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #FFFFFF;
+    padding: .5rem 2rem;
+    border-radius: 2rem;
+    background: #580AFF;
+}
+
+.pokemon-infos-type::first-letter {
+    text-transform: uppercase;
+}
+
+.pokemon-infos-image {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 25rem;
+    height: 25rem;
+    margin: 0 auto;
+}
+
+.pokemon-stats {
+    width: 100%;
+    height: auto;
+    padding: 10rem 2.5rem;
+    border-radius: 5rem;
+    background: #580AFF;
+}
+
+.description {
+    width: 75%;
+    font-size: 1.8rem;
+    font-weight: 500;
+    text-transform: lowercase;
+    text-align: center;
+    color: #FFFFFF;
+    margin: 0rem auto 5rem auto;
+}
+
+.description::first-letter {
+    text-transform: uppercase;
+}
+
+.stats {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    padding: 0rem 5rem;
+    gap: 2.5rem;
+}
+
+.stats-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+}
+
+.stats-item-p {
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: #FFFFFF;
+    padding: .5rem 1.5rem;
+    border-radius: 2.5rem;
+    background: #212121;
+}
+
+#footer {
+    width: 100%;
+    height: 5rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-align: center;
+    line-height: 5rem;
+    color: #FFFFFF;
+}
+
+.author {
+    font-weight: 700;
+    color: #580AFF;
+}
